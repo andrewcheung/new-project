@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+
+ <div class="container">
+
 <head>
   <title>Project</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -7,8 +10,48 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="pagination pagination-small">
 
+
+<%= render 'layouts/header' %>
+
+</div>
+
+    <div class="pagination pagination-centered">
+   <div class="pagination pagination-small">
+
+
+     <div class="tabbable"> <!-- Only required for left/right tabs -->
+    <ul class="nav nav-tabs">
+    <li class="active">
+
+    <%= link_to "Blog", root_path %>
+
+
+    <%= link_to "About", about_path %>
+
+	<%= link_to "Contact", about_path %>
+
+ 
+
+    </ul>
+    <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+
+    </div>
+    <div class="tab-pane" id="tab2">
+   
+    </div>
+    </div>
+    </div>
+
+    </div>
+</div>
 <%= yield %>
+
+<%= render 'layouts/footer'%>
+
+
 
 </body>
 </html>
