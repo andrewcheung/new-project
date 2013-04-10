@@ -1,0 +1,21 @@
+$baseFontFamily: Helvetica Neue;
+$baseFontSize: 11px;
+
+$navbarBackgroundHighlight: white;	
+$navbarBackground: white;
+
+@import 'bootstrap';
+
+@import 'bootstrap-responsive';
+
+body {
+	padding-top: 10px;
+}
+
+.footer {
+	margin-top: 50px;
+	color: $orange;
+	a {
+		color: $orange;
+	}
+}
